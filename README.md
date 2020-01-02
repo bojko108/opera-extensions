@@ -15,6 +15,12 @@ This extension is enabled only on Geocortex Essentials Manager: `*://*/Geocortex
 
 ![alt text](./geocortex-extension/user-img.png)
 
+# Livescore Extension
+
+This extension can be used to highlight FC Arsenal games in [Livescore.com](https://www.livescore.com)
+
+![alt text](./livescore-extension/user-img.png)
+
 # How to install
 
 1. Clone this repo.
