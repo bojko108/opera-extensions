@@ -1,0 +1,18 @@
+{
+  "name": "Kindergarden Extension",
+  "version": "1.0",
+  "description": "Highlights our kids in kg.sofia.bg",
+  "manifest_version": 2,
+  "permissions": ["activeTab", "declarativeContent", "http://*/", "https://*/"],
+  "content_scripts": [
+    {
+      "matches": ["*://kg.sofia.bg/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_title": "Kindergarden Extension",
+    "default_popup": "popup.html"
+  }
+}

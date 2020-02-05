@@ -21,6 +21,12 @@ This extension can be used to highlight FC Arsenal games in [Livescore.com](http
 
 ![alt text](./livescore-extension/user-img.png)
 
+# Kindergarden Extension
+
+This extension can be used to highlight our kids in [kg.sofia.bg](https://kg.sofia.bg/)
+
+![alt text](./kg-sofia/user-img.png)
+
 # How to install
 
 1. Clone this repo.
