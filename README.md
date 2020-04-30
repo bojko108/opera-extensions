@@ -27,6 +27,12 @@ This extension can be used to highlight our kids in [kg.sofia.bg](https://kg.sof
 
 ![alt text](./kg-sofia/user-img.png)
 
+# [Pontech Extension for Cadastre](./pontech-extension-cadastre/README.md)
+
+Developed as a chrome extension, this tool can be used to copy map's center coordinates to your clipboard or to open ArcFM Web sites.
+
+![alt text](./pontech-extension-cadastre/img/05.png)
+
 # How to install
 
 1. Clone this repo.
