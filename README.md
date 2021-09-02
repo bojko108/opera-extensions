@@ -33,6 +33,14 @@ Developed as a chrome extension, this tool can be used to copy map's center coor
 
 ![alt text](./pontech-extension-cadastre/img/05.png)
 
+# SUSI Extension
+
+This extension will make the lists in SUSI more readable by coloring odd/even rows differently.
+
+This extension is enabled only on SUSI web page: `*://susi4.uni-sofia.bg/*`
+
+![alt text](./susi-extension/user-img.png)
+
 # How to install
 
 1. Clone this repo.
