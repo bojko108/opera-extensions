@@ -1,19 +1,21 @@
 {
-  "name": "Pontech Extension for Cadastre",
-  "version": "3.0",
-  "description": "Additional tools for the Cadastre Information System",
-  "manifest_version": 2,
-  "permissions": ["activeTab", "declarativeContent", "http://*/", "https://*/"],
-  "content_scripts": [
-    {
-      "matches": ["https://kais.cadastre.bg/bg/Map/*"],
-      "js": ["contentScript.js"]
+    "name": "Pontech Extension for Cadastre",
+    "version": "3.2",
+    "description": "Additional tools for the Cadastre Information System",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "declarativeContent"],
+    "host_permissions": ["http://*/", "https://*/"],
+    "content_scripts": [{
+        "matches": ["https://kais.cadastre.bg/bg/Map/*"],
+        "js": ["contentScript.js"]
+    }],
+    "web_accessible_resources": [{
+        "resources": ["external-script.js"],
+        "matches": ["http://*/*", "https://*/*"]
+    }],
+    "action": {
+        "default_icon": "icon.png",
+        "default_title": "Pontech Extension for Cadastre",
+        "default_popup": "popup.html"
     }
-  ],
-  "web_accessible_resources": ["external-script.js"],
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_title": "Pontech Extension for Cadastre",
-    "default_popup": "popup.html"
-  }
 }

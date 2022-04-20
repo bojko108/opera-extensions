@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <style>
-      html {
-        font-family: sans-serif;
-      }
-      html,
-      body {
-        margin: 0px;
-        width: 400px;
-      }
-      button {
-        height: 30px;
-        width: 30px;
-        outline: none;
-      }
-      .content {
-        padding: 10px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      .logo {
-        width: 50px;
-        height: 50px;
-      }
+        html {
+            font-family: sans-serif;
+        }
+        
+        html,
+        body {
+            margin: 0px;
+            width: 400px;
+        }
+        
+        button {
+            height: 30px;
+            width: 30px;
+            outline: none;
+        }
+        
+        .content {
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .logo {
+            width: 50px;
+            height: 50px;
+        }
     </style>
-  </head>
-  <body>
+</head>
+
+<body>
     <div class="content">
-      <img src="icon.png" class="logo" alt="logo" />
-      <p>
-        Инструментът служи за копиране координатите на центъра на картата в <b>система КАИС</b> и отваряне на <b>ЧЕЗ ГИС Клиент</b>. Разработен е като
-        допълнителен инструмент и може да се зареди в браузъри като <b>Opera</b> и <b>Chrome</b>. Инструментът е активен само на адрес
-        <a href="https://kais.cadastre.bg/bg/Map">https://kais.cadastre.bg/bg/Map</a>.
-      </p>
-      <h3 style="align-self: baseline; margin-bottom: 0px;">Как се използва</h3>
-      <h4 style="align-self: baseline; margin-bottom: 0px;">Копирай координатите</h4>
-      <ol>
-        <li>Отидете на адрес <a href="https://kais.cadastre.bg/bg/Map">https://kais.cadastre.bg/bg/Map</a></li>
-        <li>Намерете желаният имот по идентификатор или адрес, или приближете към него ръчно.</li>
-        <li>Натиснете бутон <b>Копирай координати</b>, намиращ се в основният туулбар към картата.</li>
-        <li>Координатите са копирани в клипборда и могат да бъдат поставени в <b>ЧЕЗ ГИС Клиент</b> -> инструмент <b>Добавяне на координати</b>.</li>
-      </ol>
-      <h4 style="align-self: baseline; margin-bottom: 0px;">Отвори ЧЕЗ ГИС Клиент</h4>
-      <ol>
-        <li>Отидете на адрес <a href="https://kais.cadastre.bg/bg/Map">https://kais.cadastre.bg/bg/Map</a></li>
-        <li>Намерете желаният имот по идентификатор или адрес, или приближете към него ръчно.</li>
-        <li>Натиснете бутон <b>Отвори ЧЕЗ ГИС Клиент</b>, намиращ се в основният туулбар към картата.</li>
-        <li><b>ЧЕЗ ГИС Клиент</b> се отваря в нов таб и приближава към текущото положение на картата в <b>система КАИС</b>.</li>
-      </ol>
+        <img src="icon.png" class="logo" alt="logo" />
+        <p>v3.2</p>
+        <p>
+            Инструментът служи за копиране координатите на центъра на картата в <b>система КАИС</b> и отваряне на <b>ЧЕЗ ГИС Web клиент</b>. Разработен е като допълнителен инструмент и може да се зареди в браузъри като <b>Opera</b>, <b>Edge</b> и <b>Chrome</b>.
+            Инструментът е активен само на адрес <a href="https://kais.cadastre.bg/bg/Map">https://kais.cadastre.bg/bg/Map</a>.
+        </p>
+        <h3 style="align-self: baseline; margin-bottom: 0px">Как се използва</h3>
+        <h4 style="align-self: baseline; margin-bottom: 0px">Копирай координатите</h4>
+        <ol>
+            <li>Отидете на адрес <a href="https://kais.cadastre.bg/bg/Map">https://kais.cadastre.bg/bg/Map</a></li>
+            <li>Намерете желаният имот по идентификатор или адрес, или приближете към него ръчно.</li>
+            <li>Натиснете бутон <b>Копирай координати</b>, намиращ се в основният туулбар към картата.</li>
+            <li>
+                Координатите са копирани в клипборда и могат да бъдат поставени в <b>ЧЕЗ ГИС Web клиент</b> -> инструмент <b>Добавяне на координати</b>.
+            </li>
+        </ol>
+        <h4 style="align-self: baseline; margin-bottom: 0px">Отвори ЧЕЗ ГИС Клиент</h4>
+        <ol>
+            <li>Отидете на адрес <a href="https://kais.cadastre.bg/bg/Map">https://kais.cadastre.bg/bg/Map</a></li>
+            <li>Намерете желаният имот по идентификатор или адрес, или приближете към него ръчно.</li>
+            <li>Натиснете бутон <b>Отвори ЧЕЗ ГИС Клиент</b>, намиращ се в основният туулбар към картата.</li>
+            <li>
+                Избраният <b>ЧЕЗ ГИС Web клиент</b> се отваря в нов таб и картата се приближава към текущото положение на картата в <b>система КАИС</b>.
+            </li>
+        </ol>
     </div>
-  </body>
+</body>
+
 </html>

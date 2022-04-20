@@ -4,9 +4,8 @@
  */
 const slks = [
   { value: null, label: 'Отвори ЧЕЗ ГИС Клиент...' },
-  { value: 'http://lgapp.pontechrd.local/ArcFMWebViewer412?viewer=ForTest', label: 'Open ForTest' },
-  { value: 'http://lgapp.pontechrd.local/ArcFMWebViewer412/', label: 'No Config' },
-  { value: 'http://lgapp.pontechrd.local/ArcFMWebViewer412?viewer=ForTest&locale=bg-BG', label: 'Locale bg-BG' },
+  { value: 'https://gis.cezbg.corp/ArcFMWebViewer/index.html?viewer=cez', label: 'ЧЕЗ Разпределение България' },
+  { value: 'https://gis.cezbg.corp/ArcFMWebViewer/index.html?viewer=survey', label: 'Бъдещи присъединявания' },
 ];
 
 /**
