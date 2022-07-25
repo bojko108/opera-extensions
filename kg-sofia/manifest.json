@@ -1,18 +1,21 @@
 {
-  "name": "Kindergarden Extension",
-  "version": "1.0",
-  "description": "Highlights our kids in kg.sofia.bg",
-  "manifest_version": 2,
-  "permissions": ["activeTab", "declarativeContent", "http://*/", "https://*/"],
-  "content_scripts": [
-    {
-      "matches": ["*://kg.sofia.bg/*"],
-      "js": ["contentScript.js"]
+    "name": "Kindergarden Extension",
+    "version": "2.0",
+    "description": "Highlights our kids in kg.sofia.bg",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "declarativeContent"],
+    "host_permissions": ["http://*/", "https://*/"],
+    "content_scripts": [{
+        "matches": ["*://kg.sofia.bg/*"],
+        "js": ["contentScript.js"]
+    }],
+    "web_accessible_resources": [{
+        "resources": ["external-script.js"],
+        "matches": ["http://*/*", "https://*/*"]
+    }],
+    "action": {
+        "default_icon": "icon.png",
+        "default_title": "Kindergarden Extension",
+        "default_popup": "popup.html"
     }
-  ],
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_title": "Kindergarden Extension",
-    "default_popup": "popup.html"
-  }
 }
