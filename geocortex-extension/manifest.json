@@ -1,18 +1,17 @@
 {
-  "name": "Geocortex Essentials Manager Extension",
-  "version": "1.0",
-  "description": "Makes the lists in Geocortex Esssentials Manager more readable.",
-  "manifest_version": 2,
-  "permissions": ["activeTab", "declarativeContent", "http://*/", "https://*/"],
-  "content_scripts": [
-    {
-      "matches": ["*://*/Geocortex/Essentials/RestManager*"],
-      "css": ["geocortex-manager.css"]
+    "name": "Geocortex Essentials Manager Extension",
+    "version": "1.0",
+    "description": "Makes the lists in Geocortex Esssentials Manager more readable.",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "declarativeContent"],
+    "host_permissions": ["http://*/", "https://*/"],
+    "content_scripts": [{
+        "matches": ["*://*/Geocortex/Essentials/RestManager*"],
+        "css": ["geocortex-manager.css"]
+    }],
+    "action": {
+        "default_icon": "icon.png",
+        "default_title": "Geocortex Essentials Manager Extension",
+        "default_popup": "popup.html"
     }
-  ],
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_title": "Geocortex Essentials Manager Extension",
-    "default_popup": "popup.html"
-  }
 }
