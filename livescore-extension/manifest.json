@@ -1,18 +1,21 @@
 {
-  "name": "Livescore Extension",
-  "version": "1.0",
-  "description": "Highlights FC Arsenal games in Livescore.com",
-  "manifest_version": 2,
-  "permissions": ["activeTab", "declarativeContent", "http://*/", "https://*/"],
-  "content_scripts": [
-    {
-      "matches": ["*://www.livescore.com/*"],
-      "js": ["contentScript.js"]
+    "name": "Livescore Extension",
+    "version": "2.0",
+    "description": "Highlights FC Arsenal games in Livescore.com",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "declarativeContent"],
+    "host_permissions": ["http://*/", "https://*/"],
+    "content_scripts": [{
+        "matches": ["*://www.livescore.com/*"],
+        "js": ["contentScript.js"]
+    }],
+    "web_accessible_resources": [{
+        "resources": ["external-script.js"],
+        "matches": ["http://*/*", "https://*/*"]
+    }],
+    "action": {
+        "default_icon": "icon.png",
+        "default_title": "Livescore Extension",
+        "default_popup": "popup.html"
     }
-  ],
-  "browser_action": {
-    "default_icon": "icon.png",
-    "default_title": "Livescore Extension",
-    "default_popup": "popup.html"
-  }
 }
