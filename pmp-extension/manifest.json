@@ -1,0 +1,17 @@
+{
+    "name": "PMP Extension",
+    "version": "2.0",
+    "description": "use this extension in https://pmp.cez.local:7272 to enter you credentials automatically",
+    "manifest_version": 3,
+    "permissions": ["activeTab", "declarativeContent"],
+    "host_permissions": ["http://*/", "https://*/"],
+    "content_scripts": [{
+        "matches": ["https://pmp.cez.local:7272/*"],
+        "js": ["contentScript.js"]
+    }],
+    "action": {
+        "default_icon": "icon.png",
+        "default_title": "PMP Extension",
+        "default_popup": "popup.html"
+    }
+}

@@ -33,6 +33,10 @@ Developed as a chrome extension, this tool can be used to copy map's center coor
 
 ![alt text](./pontech-extension-cadastre/img/05.png)
 
+# PMP Extension
+
+Use this extension in [https://pmp.cez.local:7272](https://pmp.cez.local:7272) to enter you credentials automatically
+
 # SUSI Extension
 
 This extension will make the lists in SUSI more readable by coloring odd/even rows differently.
